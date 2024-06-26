@@ -22,7 +22,7 @@ namespace HelperLib.Tests
             DateTime dateTo = new DateTime(2024, 06, 25);
 
             // Act & Assertion
-            if (date > DateTime.Today)
+            if (date > dateTo)
             {
                 Assert.Throws<ArgumentException>(() =>
                 {

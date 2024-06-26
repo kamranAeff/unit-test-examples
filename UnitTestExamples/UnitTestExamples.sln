@@ -7,9 +7,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{52E89A84-CDD
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{4820124F-6CD5-4B36-A724-1B6CEE9BBF64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelperLib", "src\HelperLib\HelperLib.csproj", "{28A13DB0-B548-415B-BB8F-75BAA3EAE665}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelperLib", "src\HelperLib\HelperLib.csproj", "{28A13DB0-B548-415B-BB8F-75BAA3EAE665}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelperLib.Tests", "tests\HelperLib.Tests\HelperLib.Tests.csproj", "{9A6BD6F6-2ED5-4A01-A86D-0E2C7B661803}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelperLib.Tests", "tests\HelperLib.Tests\HelperLib.Tests.csproj", "{9A6BD6F6-2ED5-4A01-A86D-0E2C7B661803}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C68E26E5-F92B-4FB0-ABCC-4DFF238AC5C8}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitignore = ..\.gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
