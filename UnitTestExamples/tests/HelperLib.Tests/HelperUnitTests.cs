@@ -26,14 +26,14 @@ namespace HelperLib.Tests
             {
                 Assert.Throws<ArgumentException>(() =>
                 {
-                    string actualResult = Helper.Calculate(date, dateTo);
+                    string actualResult = Helper.Calculate(date, dateTo).ToString();
                 });
             }
             else
             {
                 Assert.DoesNotThrow(() =>
                 {
-                    string actualResult = Helper.Calculate(date, dateTo);
+                    string actualResult = Helper.Calculate(date, dateTo).ToString();
                     Assert.That(actualResult, Is.EqualTo(expectedResult));
                 });
             }
