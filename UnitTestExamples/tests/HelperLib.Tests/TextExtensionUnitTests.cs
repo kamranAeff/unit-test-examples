@@ -10,7 +10,7 @@ namespace HelperLib.Tests
         {
         }
 
-        [TestCase("c# &&&&& sql", "csharp-and-sql")]
+        [TestCase("c### &&&&& sql", "csharp-and-sql")]
         [TestCase("mongodb &&& express &&&& node.js", "mongodb-and-express-and-node-js")]
         [TestCase("", "")]
         public void Test_ToSlug(string input, string expectedResult)
