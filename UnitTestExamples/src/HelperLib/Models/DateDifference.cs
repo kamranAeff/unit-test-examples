@@ -1,4 +1,4 @@
-﻿namespace HelperLib
+﻿namespace HelperLib.Models
 {
     public class DateDifference
     {
@@ -8,7 +8,7 @@
 
         public override string ToString()
         {
-            return $"{(this.Years > 0 ? $"{this.Years}il " : "")}{(this.Months > 0 ? $"{this.Months}ay " : "")}{(this.Days > 0 ? $"{this.Days}gün" : "")}".TrimEnd();
+            return $"{(Years > 0 ? $"{Years}il " : "")}{(Months > 0 ? $"{Months}ay " : "")}{(Days > 0 ? $"{Days}gün" : "")}".TrimEnd();
         }
     }
 }

@@ -1,10 +1,10 @@
-﻿using System.Text;
+﻿using HelperLib.Models;
 
-namespace HelperLib
+namespace HelperLib.Extensions
 {
-    public static class Helper
+    public static partial class Extension
     {
-        public static DateDifference Calculate(this DateTime date, DateTime? dateTo = null)
+        public static DateDifference CalculateExperience(this DateTime date, DateTime? dateTo = null)
         {
             date = date.Date;
             DateTime now = (dateTo.HasValue ? dateTo.Value.Date : DateTime.Today).AddDays(1);

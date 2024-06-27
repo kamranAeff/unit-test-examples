@@ -1,7 +1,9 @@
+using HelperLib.Extensions;
+
 namespace HelperLib.Tests
 {
     [TestFixture]
-    public class HelperUnitTests
+    public class DateExtensionUnitTests
     {
         [SetUp]
         public void Setup()
@@ -26,14 +28,14 @@ namespace HelperLib.Tests
             {
                 Assert.Throws<ArgumentException>(() =>
                 {
-                    string actualResult = Helper.Calculate(date, dateTo).ToString();
+                    string actualResult = Extension.CalculateExperience(date, dateTo).ToString();
                 });
             }
             else
             {
                 Assert.DoesNotThrow(() =>
                 {
-                    string actualResult = Helper.Calculate(date, dateTo).ToString();
+                    string actualResult = Extension.CalculateExperience(date, dateTo).ToString();
                     Assert.That(actualResult, Is.EqualTo(expectedResult));
                 });
             }
